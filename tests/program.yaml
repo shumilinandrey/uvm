@@ -1,0 +1,16 @@
+commands:
+  - operation: LOAD_CONST
+    B: 123
+    C: 4
+
+  - operation: READ_MEMORY
+    B: 0
+    C: 1
+
+  - operation: WRITE_MEMORY
+    B: 1
+    C: 0
+
+  - operation: LESS_THAN
+    B: 3
+    C: 7

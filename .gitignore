@@ -1,0 +1,10 @@
+__pycache__/
+.pytest_cache/
+.venv/
+venv/
+*.bin
+intermediate.yaml
+dump.xml
+build/
+dist/
+.vscode/
