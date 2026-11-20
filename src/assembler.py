@@ -12,6 +12,7 @@ OPCODES = {
 MAX_REGISTER = 7
 MAX_CONSTANT = (1 << 24) - 1
 MIN_VALUE = 0
+INSTRUCTION_SIZE = 4
 
 
 def check_number(value, name, maximum):
@@ -68,28 +69,46 @@ def print_instructions(instructions):
         )
 
 
+def encode_instruction(command):
+    """Закодировать инструкцию в четыре байта."""
+    value = command["A"] | (command["B"] << 3)
+
+    if command["operation"] == "LOAD_CONST":
+        value |= command["C"] << 27
+    else:
+        value |= command["C"] << 6
+
+    return value.to_bytes(INSTRUCTION_SIZE, byteorder="little")
+
+
 def write_binary(instructions, output):
-    """Заглушка записи машинного кода для второго этапа."""
-    raise NotImplementedError("Бинарная сборка появится на этапе 2")
+    """Записать последовательность инструкций в бинарный файл."""
+    with open(output, "wb") as file:
+        for command in instructions:
+            file.write(encode_instruction(command))
+
 
 
 def main():
-    """Получить аргументы запуска и выполнить выбранный режим."""
+    """Прочитать аргументы и выполнить ассемблирование."""
     parser = argparse.ArgumentParser(description="Ассемблер УВМ")
-    parser.add_argument("source", help="YAML")
-    parser.add_argument("output", help="bin")
+    parser.add_argument("source", help="Исходный YAML-файл")
+    parser.add_argument("output", help="Выходной бинарный файл")
     parser.add_argument("--test", action="store_true")
     args = parser.parse_args()
     try:
         instructions = assemble(args.source)
+        print(f"Количество команд: {len(instructions)}")
         if args.test:
-            print_instructions(instructions)
+            for command in instructions:
+                data = encode_instruction(command)
+                print(data.hex(" ").upper())
         else:
             write_binary(instructions, args.output)
+            print(f"Сохранено: {args.output}")
     except (OSError, ValueError, yaml.YAMLError) as error:
         parser.exit(1, f"Ошибка: {error}\n")
-    except NotImplementedError as error:
-        parser.exit(2, f"Не реализовано: {error}\n")
+
 
 
 if __name__ == "__main__":
