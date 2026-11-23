@@ -4,6 +4,10 @@ import argparse
 MEMORY_SIZE = 2048
 REGISTER_COUNT = 8
 INSTRUCTION_SIZE = 4
+LOAD_CONST = 0
+READ_MEMORY = 1
+WRITE_MEMORY = 5
+LESS_THAN = 6
 
 
 def create_memory():
@@ -35,7 +39,7 @@ def load_program(memory, filename):
 def decode_instruction(value):
     """Декодировать машинную команду"""
     a = value & 0b111
-    if a == 0:
+    if a == LOAD_CONST:
         b = (value >> 3) & 0xFFFFFF
         c = (value >> 27) & 0b111
     elif a in (1, 5, 6):
@@ -50,13 +54,13 @@ def execute_instruction(command, memory, registers):
     a = command["A"]
     b = command["B"]
     c = command["C"]
-    if a == 0:
+    if a == LOAD_CONST:
         registers[c] = b
-    elif a == 1:
+    elif a == READ_MEMORY:
         registers[b] = memory[registers[c]]
-    elif a == 5:
+    elif a == WRITE_MEMORY:
         memory[registers[b]] = registers[c]
-    elif a == 6:
+    elif a == LESS_THAN:
         memory[registers[b]] = int(
             memory[registers[b]] < registers[c]
         )
