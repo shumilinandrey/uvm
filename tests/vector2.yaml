@@ -1,0 +1,406 @@
+commands:
+  - operation: LOAD_CONST
+    B: 500
+    C: 1
+  - operation: LOAD_CONST
+    B: 1
+    C: 2
+  - operation: WRITE_MEMORY
+    B: 1
+    C: 2
+  - operation: LOAD_CONST
+    B: 501
+    C: 1
+  - operation: LOAD_CONST
+    B: 2
+    C: 2
+  - operation: WRITE_MEMORY
+    B: 1
+    C: 2
+  - operation: LOAD_CONST
+    B: 502
+    C: 1
+  - operation: LOAD_CONST
+    B: 3
+    C: 2
+  - operation: WRITE_MEMORY
+    B: 1
+    C: 2
+  - operation: LOAD_CONST
+    B: 503
+    C: 1
+  - operation: LOAD_CONST
+    B: 4
+    C: 2
+  - operation: WRITE_MEMORY
+    B: 1
+    C: 2
+  - operation: LOAD_CONST
+    B: 504
+    C: 1
+  - operation: LOAD_CONST
+    B: 5
+    C: 2
+  - operation: WRITE_MEMORY
+    B: 1
+    C: 2
+  - operation: LOAD_CONST
+    B: 505
+    C: 1
+  - operation: LOAD_CONST
+    B: 6
+    C: 2
+  - operation: WRITE_MEMORY
+    B: 1
+    C: 2
+  - operation: LOAD_CONST
+    B: 506
+    C: 1
+  - operation: LOAD_CONST
+    B: 7
+    C: 2
+  - operation: WRITE_MEMORY
+    B: 1
+    C: 2
+  - operation: LOAD_CONST
+    B: 507
+    C: 1
+  - operation: LOAD_CONST
+    B: 8
+    C: 2
+  - operation: WRITE_MEMORY
+    B: 1
+    C: 2
+  - operation: LOAD_CONST
+    B: 508
+    C: 1
+  - operation: LOAD_CONST
+    B: 9
+    C: 2
+  - operation: WRITE_MEMORY
+    B: 1
+    C: 2
+  - operation: LOAD_CONST
+    B: 600
+    C: 1
+  - operation: LOAD_CONST
+    B: 9
+    C: 2
+  - operation: WRITE_MEMORY
+    B: 1
+    C: 2
+  - operation: LOAD_CONST
+    B: 601
+    C: 1
+  - operation: LOAD_CONST
+    B: 8
+    C: 2
+  - operation: WRITE_MEMORY
+    B: 1
+    C: 2
+  - operation: LOAD_CONST
+    B: 602
+    C: 1
+  - operation: LOAD_CONST
+    B: 7
+    C: 2
+  - operation: WRITE_MEMORY
+    B: 1
+    C: 2
+  - operation: LOAD_CONST
+    B: 603
+    C: 1
+  - operation: LOAD_CONST
+    B: 6
+    C: 2
+  - operation: WRITE_MEMORY
+    B: 1
+    C: 2
+  - operation: LOAD_CONST
+    B: 604
+    C: 1
+  - operation: LOAD_CONST
+    B: 5
+    C: 2
+  - operation: WRITE_MEMORY
+    B: 1
+    C: 2
+  - operation: LOAD_CONST
+    B: 605
+    C: 1
+  - operation: LOAD_CONST
+    B: 4
+    C: 2
+  - operation: WRITE_MEMORY
+    B: 1
+    C: 2
+  - operation: LOAD_CONST
+    B: 606
+    C: 1
+  - operation: LOAD_CONST
+    B: 3
+    C: 2
+  - operation: WRITE_MEMORY
+    B: 1
+    C: 2
+  - operation: LOAD_CONST
+    B: 607
+    C: 1
+  - operation: LOAD_CONST
+    B: 2
+    C: 2
+  - operation: WRITE_MEMORY
+    B: 1
+    C: 2
+  - operation: LOAD_CONST
+    B: 608
+    C: 1
+  - operation: LOAD_CONST
+    B: 1
+    C: 2
+  - operation: WRITE_MEMORY
+    B: 1
+    C: 2
+  - operation: LOAD_CONST
+    B: 500
+    C: 1
+  - operation: READ_MEMORY
+    B: 3
+    C: 1
+  - operation: LOAD_CONST
+    B: 700
+    C: 4
+  - operation: WRITE_MEMORY
+    B: 4
+    C: 3
+  - operation: LOAD_CONST
+    B: 600
+    C: 2
+  - operation: READ_MEMORY
+    B: 5
+    C: 2
+  - operation: LESS_THAN
+    B: 4
+    C: 5
+  - operation: READ_MEMORY
+    B: 6
+    C: 4
+  - operation: WRITE_MEMORY
+    B: 2
+    C: 6
+  - operation: LOAD_CONST
+    B: 501
+    C: 1
+  - operation: READ_MEMORY
+    B: 3
+    C: 1
+  - operation: LOAD_CONST
+    B: 700
+    C: 4
+  - operation: WRITE_MEMORY
+    B: 4
+    C: 3
+  - operation: LOAD_CONST
+    B: 601
+    C: 2
+  - operation: READ_MEMORY
+    B: 5
+    C: 2
+  - operation: LESS_THAN
+    B: 4
+    C: 5
+  - operation: READ_MEMORY
+    B: 6
+    C: 4
+  - operation: WRITE_MEMORY
+    B: 2
+    C: 6
+  - operation: LOAD_CONST
+    B: 502
+    C: 1
+  - operation: READ_MEMORY
+    B: 3
+    C: 1
+  - operation: LOAD_CONST
+    B: 700
+    C: 4
+  - operation: WRITE_MEMORY
+    B: 4
+    C: 3
+  - operation: LOAD_CONST
+    B: 602
+    C: 2
+  - operation: READ_MEMORY
+    B: 5
+    C: 2
+  - operation: LESS_THAN
+    B: 4
+    C: 5
+  - operation: READ_MEMORY
+    B: 6
+    C: 4
+  - operation: WRITE_MEMORY
+    B: 2
+    C: 6
+  - operation: LOAD_CONST
+    B: 503
+    C: 1
+  - operation: READ_MEMORY
+    B: 3
+    C: 1
+  - operation: LOAD_CONST
+    B: 700
+    C: 4
+  - operation: WRITE_MEMORY
+    B: 4
+    C: 3
+  - operation: LOAD_CONST
+    B: 603
+    C: 2
+  - operation: READ_MEMORY
+    B: 5
+    C: 2
+  - operation: LESS_THAN
+    B: 4
+    C: 5
+  - operation: READ_MEMORY
+    B: 6
+    C: 4
+  - operation: WRITE_MEMORY
+    B: 2
+    C: 6
+  - operation: LOAD_CONST
+    B: 504
+    C: 1
+  - operation: READ_MEMORY
+    B: 3
+    C: 1
+  - operation: LOAD_CONST
+    B: 700
+    C: 4
+  - operation: WRITE_MEMORY
+    B: 4
+    C: 3
+  - operation: LOAD_CONST
+    B: 604
+    C: 2
+  - operation: READ_MEMORY
+    B: 5
+    C: 2
+  - operation: LESS_THAN
+    B: 4
+    C: 5
+  - operation: READ_MEMORY
+    B: 6
+    C: 4
+  - operation: WRITE_MEMORY
+    B: 2
+    C: 6
+  - operation: LOAD_CONST
+    B: 505
+    C: 1
+  - operation: READ_MEMORY
+    B: 3
+    C: 1
+  - operation: LOAD_CONST
+    B: 700
+    C: 4
+  - operation: WRITE_MEMORY
+    B: 4
+    C: 3
+  - operation: LOAD_CONST
+    B: 605
+    C: 2
+  - operation: READ_MEMORY
+    B: 5
+    C: 2
+  - operation: LESS_THAN
+    B: 4
+    C: 5
+  - operation: READ_MEMORY
+    B: 6
+    C: 4
+  - operation: WRITE_MEMORY
+    B: 2
+    C: 6
+  - operation: LOAD_CONST
+    B: 506
+    C: 1
+  - operation: READ_MEMORY
+    B: 3
+    C: 1
+  - operation: LOAD_CONST
+    B: 700
+    C: 4
+  - operation: WRITE_MEMORY
+    B: 4
+    C: 3
+  - operation: LOAD_CONST
+    B: 606
+    C: 2
+  - operation: READ_MEMORY
+    B: 5
+    C: 2
+  - operation: LESS_THAN
+    B: 4
+    C: 5
+  - operation: READ_MEMORY
+    B: 6
+    C: 4
+  - operation: WRITE_MEMORY
+    B: 2
+    C: 6
+  - operation: LOAD_CONST
+    B: 507
+    C: 1
+  - operation: READ_MEMORY
+    B: 3
+    C: 1
+  - operation: LOAD_CONST
+    B: 700
+    C: 4
+  - operation: WRITE_MEMORY
+    B: 4
+    C: 3
+  - operation: LOAD_CONST
+    B: 607
+    C: 2
+  - operation: READ_MEMORY
+    B: 5
+    C: 2
+  - operation: LESS_THAN
+    B: 4
+    C: 5
+  - operation: READ_MEMORY
+    B: 6
+    C: 4
+  - operation: WRITE_MEMORY
+    B: 2
+    C: 6
+  - operation: LOAD_CONST
+    B: 508
+    C: 1
+  - operation: READ_MEMORY
+    B: 3
+    C: 1
+  - operation: LOAD_CONST
+    B: 700
+    C: 4
+  - operation: WRITE_MEMORY
+    B: 4
+    C: 3
+  - operation: LOAD_CONST
+    B: 608
+    C: 2
+  - operation: READ_MEMORY
+    B: 5
+    C: 2
+  - operation: LESS_THAN
+    B: 4
+    C: 5
+  - operation: READ_MEMORY
+    B: 6
+    C: 4
+  - operation: WRITE_MEMORY
+    B: 2
+    C: 6
