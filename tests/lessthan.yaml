@@ -1,0 +1,59 @@
+commands:
+  # 5 < 8 = 1
+  - operation: LOAD_CONST
+    B: 50
+    C: 1
+
+  - operation: LOAD_CONST
+    B: 5
+    C: 2
+
+  - operation: WRITE_MEMORY
+    B: 1
+    C: 2
+
+  - operation: LOAD_CONST
+    B: 8
+    C: 2
+
+  - operation: LESS_THAN
+    B: 1
+    C: 2
+
+  # 9 < 3 = 0
+  - operation: LOAD_CONST
+    B: 51
+    C: 1
+
+  - operation: LOAD_CONST
+    B: 9
+    C: 2
+
+  - operation: WRITE_MEMORY
+    B: 1
+    C: 2
+
+  - operation: LOAD_CONST
+    B: 3
+    C: 2
+
+  - operation: LESS_THAN
+    B: 1
+    C: 2
+
+  # 7 < 7 = 0
+  - operation: LOAD_CONST
+    B: 52
+    C: 1
+
+  - operation: LOAD_CONST
+    B: 7
+    C: 2
+
+  - operation: WRITE_MEMORY
+    B: 1
+    C: 2
+
+  - operation: LESS_THAN
+    B: 1
+    C: 2
